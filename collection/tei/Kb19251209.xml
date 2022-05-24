@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Kärleksbrev från Greta till Gustaf</title>
+            <author><persName ref="#GRE"><forename>Greta</forename> <surname type='maiden'>Andersson</surname></persName></author>
+            <editor>Marcus Lindbom</editor>
+            <editor>Hanna Lindbom</editor>
+            <editor>Malin Sandstedt</editor>
+            
+            <respStmt>
+               <resp>TEI encoded by, </resp>
+               <name>Malin Sandstedt</name>
+            </respStmt>
+         </titleStmt>
+         
+         <publicationStmt>
+            <distributor>The University of Borås</distributor>
+            
+            <pubPlace>
+               <address>
+                  <street>Österbacka 11</street>
+                  <postCode>22610</postCode>
+                  <settlement>Lemland</settlement>
+                  <country>Finland</country>
+               </address>
+            </pubPlace>
+            
+            <authority>Malin Sandstedt</authority>
+            <date when="2022-05-11">31 Mars 2022</date>
+            <idno>Kb19251209</idno>
+            
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc-nd/4.0/">Licensed with a
+                  <ref target="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
+                     Commons Attribution</ref> licence.</licence>
+            </availability>
+         </publicationStmt>
+         
+         <notesStmt>
+            <note>Transcribed for the course Digitising Cultural Heritage Material (32LDK1).</note>
+         </notesStmt> 
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>The private collection of Marcus Lindbom</repository>
+               </msIdentifier>
+               
+               <physDesc>      
+                  <objectDesc form="letter">
+                  <supportDesc material="paper">                       
+                     <foliation>
+                        <p>
+                           Originally, the pages of the letter are not numbered. Pages 2-3 and 6-7 are part of two double-paged spreads where the pages within that spread  share a facsimile.
+                        </p>
+                     </foliation>
+                     
+                     <condition>
+                        <p>
+                           The letter is in good shape but some words were difficult to make out do it being smudged.
+                        </p>
+                     </condition>
+                  </supportDesc>
+                  </objectDesc>
+                  
+                  <handDesc>
+                     <p>
+                        The letter was hand-written by <persName ref="#GRE"><forename>Greta</forename> <surname type='maiden'>Andersson</surname></persName>.
+                     </p>
+                  </handDesc>
+               </physDesc>
+               
+               <history>
+                  <origin>
+                     <p>
+                        The letter was written in <date>1925</date> by <persName ref="#GRE"><forename>Greta</forename> <surname type='maiden'>Andersson</surname></persName> during a corresponcende with <persName ref="#GUS">Gustaf Lindbom</persName>.
+                     </p>
+                  </origin>
+               </history> 
+            </msDesc>
+            
+            <biblStruct>
+               <analytic>
+                  <title>Kärleksbrev från Greta till Gustaf</title>
+                  <author><persName ref="#GRE"><forename>Greta</forename><surname type='maiden'>Andersson</surname></persName></author>
+               </analytic>
+               
+               <monogr>
+                  <title>The Lindbom Family Letters Collection/Familjen Lindboms brevsamling</title>
+                  <imprint>
+                     <biblScope unit="page" n="8">Eight pages</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+     
+     <encodingDesc>
+        <projectDesc>
+           <p>
+              The encoding was within a course as an assignment.
+           </p>
+        </projectDesc>
+        
+        <editorialDecl>
+           <hyphenation>
+              <p>
+                 Hyphens have been transcribed as they appear.
+              </p>
+           </hyphenation>
+           
+           <punctuation>
+              <p>
+                 Punctuations have been transcribed as they appear or in few occurances added when it seemed obvious because of the capital letter in the next sentence.
+              </p>
+           </punctuation>
+           
+           <normalization>
+              <p>
+                 On page 1, I chose not to mark the long line in the salute since it did not seem necesassary and I found no good element to use.
+              </p>
+           </normalization>
+           
+           <segmentation>
+              <p>
+                 Pages 2, 3, 4 and 7 had words incerted in smaller font above and between words. 
+                 I used the element add rend to mark how they were presented in the letter.
+                 
+                 Page 8 had one word within the salute on its own line and rendered right. 
+                 I used the element w rend to mark how the word was presented in the letter.
+                 
+                 Page 8 had one sentence written alongside its left margin. It was difficult to 
+                 know in what order to read it. To avoid interrupting the presented flow of 
+                 the letter I chose to put it at the end of the salute, which had similar contents
+                 as the sentence. I used the element s rend to mark how the sentence was presented.
+                 
+                 I did not find a good way to encode the pages that were part of a double-sided 
+                 spread and chose to treat them as regular pages that just share facimile.
+              </p>
+            </segmentation> 
+        </editorialDecl>   
+     </encodingDesc>
+     
+     <profileDesc>
+        <creation>
+           <placeName>Stockholm</placeName>
+           <date when="1925-12-09">9 December 1925</date>
+        </creation>
+        
+        <handNotes>
+           <handNote>Written in <persName ref="#GRE"><forename>Greta</forename><surname type='maiden'>Andersson</surname></persName>'s hand</handNote>
+        </handNotes>
+        
+        <langUsage>
+           <language ident="swe">Swedish</language>
+        </langUsage>
+        
+        <particDesc>  
+           <listPerson>
+              <person xml:id="GRE">
+                 <persName ref="#GRE">
+                    <forename>Greta</forename>
+                    <surname type='maiden'>Andersson</surname>
+                    <surname type='married'>Lindbom</surname>
+                 </persName>
+                 <birth when="1898-09-21">21 September 1898</birth>
+              </person>
+              <person xml:id="GUS">
+                 <persName ref="#GUS">
+                    <forename>Gustaf</forename>
+                    <surname >Lindbom</surname>
+                 </persName>
+                 <birth when="1900-12-30">30 December 1900</birth>
+              </person>
+              <person xml:id="HM">
+                 <persName ref="#HM">
+                    <roleName>mamma</roleName>
+                    <forename>Hulda Maria</forename>
+                    <surname type="married">Andersson</surname>
+                 </persName>
+              </person>
+              <person xml:id="Sigr">
+                 <persName ref="#Sigr">
+                     <forename>Sigrid</forename>
+                 </persName>
+              </person>
+              
+              <listRelation>
+                 <relation type="parent" name="mamma" active="#GreMum" passive="#GRE"></relation>
+                 <relation name="sibling" mutual="#GUS #Sigr"></relation>
+                 <relation name="corrensp" mutual="#GUS #GRE"></relation>
+              </listRelation>
+           </listPerson>
+         </particDesc>
+        
+        <correspDesc>
+           <correspAction type="sent">
+              <persName ref="#GRE"><forename>Greta</forename><surname type='maiden'>Andersson</surname></persName>
+              <settlement>Stockholm</settlement>
+           </correspAction>
+           <correspAction type="received">
+              <persName ref="#GUS"><forename>Gustaf</forename> <surname>Lindbom</surname></persName>
+           </correspAction>
+        </correspDesc>
+        
+        <textClass>
+           <keywords>
+              <list>
+                 <item xml:lang="eng">Swedish History</item>
+                 <item xml:lang="eng">History</item>
+                 <item xml:lang="eng">Sweden</item>
+                 <item xml:lang="eng">Letter</item>
+                 <item xml:lang="eng">Love letter</item>                
+                 <item xml:lang="eng">Correspondence</item>
+                 <item xml:lang="swe">Svensk historia</item>
+                 <item xml:lang="swe">Historia</item>
+                 <item xml:lang="swe">Brev</item>
+                 <item xml:lang="swe">Kärleksbrev</item>
+                 <item xml:lang="swe">Korrespondens</item>                
+              </list>
+           </keywords>
+        </textClass>
+     </profileDesc> 
+     
+  </teiHeader>
+   <text type="letter">
+      <body>
+         <div type="letter">
+            
+         <!-- Page 1 -->
+         <pb n="1" facs="Kb19251209GRE_1.tif"/>       
+ 
+            <dateline rend="right">
+               <placeName>Stockholm</placeName> <date when="1925-12-09">den 9/12 25</date>
+            </dateline>
+            
+            <salute>
+               <persName ref="#GUS"><forename>Gustaf!</forename></persName><lb/>
+               <hi rend="underline">Guds rika Frid o Välsignelse!</hi>
+            </salute>
+            
+            <p>
+               Må Gud vara nära mig när <lb/>
+               jag skriver detta brev och må <lb/>
+               Han vara nära dig när du läser <lb/>
+               det. Nu har allt blivit stilla om-<lb/>
+               kring mig efter dagens allehanda <lb/>
+               och jag vill nu i stillhet utgjuta <lb/>
+               mitt hjärta för dig. Det är så stilla <lb/>
+               i min själ och i mitt hjärta. <lb/>
+               Gud är mig så nära, och du <persName ref="#GUS"><forename>Gustaf</forename></persName> <lb/>
+               är mig så nära, det är en stilla <lb/>
+               Frid o ro som vilar över mig. <lb/>
+            
+         <!-- Page 2 on the left side of a double-paged spread -->
+         <pb n="2" facs="Kb19251209GRE_2_3.tif"/>
+               
+               Detta är <emph rend="ul">Kärleken</emph>. Så känner jag <lb/>
+               den <unclear>må</unclear> även denna Frid o Ro <lb/>
+               komma dig till del när du <lb/>
+               läser detta. <emph rend="ul">Jag är din,</emph> – vän på <lb/>
+               ett <emph rend="ul">djupare sätt</emph> huru skulle <lb/>
+               <add rend="up">jag</add> annars kunna skriva mitt förra <lb/>
+               brev. Det har kommit något <lb/>
+               "Heligt" in i våra liv och må <lb/>
+               detta nya heliga, helga o rena <lb/>
+               oss mer för vår Älskade Frälsares <lb/>
+               förhärligande. Jag tackar dig <emph rend="ul">min</emph> <lb/>
+               <persName ref="#GUS"><forename>Gustaf</forename></persName>, <emph rend="ul">för du är min, nu,</emph> för-<lb/>
+               står du detta, att du var så <lb/>
+               ärlig o uppriktig emot mig och <lb/>
+               jag vill vara lika ärlig igen. Du <lb/>
+               kanske redan vet på ryktets <lb/>
+               
+         <!-- Page 3 on the right side of a double-paged spread -->
+         <pb n="3" facs="Kb19251209GRE_2_3.tif"/>
+               
+               vingar att <name>Petrus <unclear>Sporrong</unclear></name> och jag <lb/>
+               haft sällskap <emph rend="ul">ingenting annat</emph> <lb/>
+               jag trodde detta var <emph rend="ul">kärlek</emph> men <lb/>
+               det var endast ett <emph rend="ul">tycke</emph> som <lb/>
+               det heter. Han är alldeles utplånad <lb/>
+               ur mitt liv och detta har jag <lb/>
+               tackat Gud för många gånger <lb/>
+               sedan jag blev omvänd till Gud. <lb/> 
+               Du skriver vidare att <add rend="up">du</add> fört ett <lb/>
+               utsvävande liv under din <unclear>otrostid</unclear>. <lb/>
+               När Jesus som är utan synd <lb/>
+               och som står framför oss såsom <lb/>
+               det enda sanna o rena när <lb/>
+               Han har förlåtit dig dina fel-<lb/>
+               steg skulle då icke jag förlåta <lb/>
+               dig som själv är och varit en <lb/>
+                  
+         <!-- Page 4 -->
+         <pb n="4" facs="Kb19251209GRE_4.tif"/>
+               
+               en syndare fastän jag aldrig i <lb/>
+               sedligt hänseende har brutit <lb/>
+               emot Gud. Jag förlåter dig <emph rend="ul">allt</emph> <lb/>
+               och nu måste du lova mig att <lb/>
+               detta är glömt oss emellan. <lb/>
+               Då vore det icke den rätta <lb/>
+               <emph rend="ul">kärleken jag kände för dig</emph> om <lb/>
+               jag icke skulle kunna förlåta. <lb/>
+               Det är en sak som du måste <lb/>
+               <add rend="up">skriva</add> och förklara för mig, varför <lb/>
+               ville du att vi endast skulle <lb/>
+               vara såsom <emph rend="ul">broder</emph> o <emph rend="ul">syster</emph><lb/>
+               ingenting annat, var du icke <lb/>
+               säker på dig <add rend="up">själv</add> förrän jag fick <lb/>
+               <add rend="up">skriva</add> mitt brev, huru jag än vänder <lb/>
+               på saken kommer jag icke <lb/>
+               
+         <!-- Page 5 -->
+         <pb n="5" facs="Kb19251209GRE_5.tif"/>
+               
+               till någon klarhet. Det har <lb/>
+               kommit en tanke flera gånger <lb/>
+               för mig i dag varför <emph rend="ul">Gud är <lb/>
+               så god</emph> just emot mig att Han <lb/>
+               har sänt <emph rend="ul">dig i min väg</emph>. Jag kän-<lb/>
+               ner att jag icke lever ett så <lb/>
+               rikt liv i min Herre Jesu när-<lb/>
+               het som jag borde och ändå har <lb/>
+               Gud skänkt mig detta. Det är <lb/>
+               som en mörk skugga glider <lb/>
+               över det hela när den tanken <lb/>
+               kommer, Gud kanske låter mig <lb/>
+               endast se detta på långt håll <lb/>
+               för att sedan taga det ifrån <lb/>
+               mig. Varför detta kommer just <lb/>
+               nu för mig vet jag icke det <unclear>kan</unclear> <lb/>
+                  
+         <!-- Page 6 on the left side of a double-paged spread -->
+         <pb n="6" facs="Kb19251209GRE_6_7.tif"/>
+               
+               jag icke förklara. Vi lägga våra <lb/>
+               liv och allt i Guds Hand må <lb/>
+               Han leda oss efter sin vilja <lb/>
+               och på sina vägar. Tack gode <lb/>
+               Gud att Du har skänkt mig <lb/>
+               <persName ref="#GUS"><forename>Gustaf</forename></persName>. Må jag bliva o vara som <lb/>
+               du <persName ref="#GUS"><forename>Gustaf</forename></persName> vill att jag skall vara. <lb/>
+               Du får icke överskatta mig för <lb/>
+               att du sedan skall bliva besviken. <lb/>
+               Du skriver att du bär mig alltid <lb/>
+               i ditt hjärta det gör även jag med <lb/>
+               dig men icke på så starka <lb/>
+               bönens armar som du mig, här <lb/>
+               känner jag min svaghet måtte <lb/>
+               jag bliva stark och mera ihär-<lb/>
+               dig i bön både för mig själv <lb/>
+
+         <!-- Page 7 on the right side of a double-paged spread -->
+         <pb n="7" facs="Kb19251209GRE_6_7.tif"/>
+               
+               för dig och för mina nära o <lb/>
+               kära som ännu icke känna <lb/>
+               Jesus. Nu tror jag att jag <lb/>
+               måste sluta mitt brev <lb/>
+               jag orkar icke mer det blev <lb/>
+               för mycket för <add rend="up">mig</add> detta på en <lb/>
+               gång. Nu skall jag gå till vila <lb/>
+               för tiden är långt framskriden <lb/>
+               så du kanske redan sover godt. <lb/>           
+               Att jag längtar efter dig det förstår <lb/>
+               du nog men Gud låter oss <lb/>
+               nog träffa varandra när Han <lb/>
+               vill det. Må vi icke gå Gud i <lb/>
+               förväg med något. Mitt hjärta <lb/>
+               slår och jag får så ont i bröstet <lb/>
+               detta skriver jag för att du må <lb/>
+                  
+         <!-- Page 8 -->
+         <pb n="8" facs="Kb19251209GRE_8.tif"/>
+               
+               veta vad <emph rend="ul">du</emph> är för mig. Har <lb/>
+               i kväll ringt hem till <persName ref="#HM"><roleName>Mamma</roleName></persName> <lb/>
+               för litet saker som vi skulle <lb/>
+               ordna till Julen. Till Jul får jag <lb/>
+               icke resa hem men kanske <lb/>
+               något på Nya året om Gud <lb/>
+               låter mig leva o ha hälsan. <lb/>
+               Hälsa din syster <persName ref="#Sigr"><forename>Sigrid</forename></persName>. Namnet <lb/>
+               på gården var litet otydligt men <lb/>
+               hoppas detta kommer fram. <lb/> 
+               Hoppas du har hälsan och var <lb/>
+               nu rädd om dig och lev för <lb/>
+               Jesus Kristus och <emph rend="ul">din <persName ref="#GRE"><forename>Greta</forename></persName>.</emph> 
+            </p>  
+            
+            <salute>Gud välsigne dig rikligen <lb/>
+                     och må Han se med väl-<lb/>
+                     behag till detta brev och oss <lb/>
+                     <w rend="right">båda</w>
+                     <s rend="leftmargin ">Nu förstår du vad jag längtar efter brev ifrån dig.</s>
+            </salute>
+             
+         </div>  
+      </body>
+  </text>
+</TEI>
